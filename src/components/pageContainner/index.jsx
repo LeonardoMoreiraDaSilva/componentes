@@ -1,10 +1,11 @@
-import Navegation2 from "../menu/navegation"
+import Navegation2 from "../menu/navegation";
+import { MainStyles } from "./styles";
 
 export function PageContainner ({children}){
     return(
         <>
             <Navegation2/>
-            <main>{children}</main>
+            <MainStyles>{children}</MainStyles>
         </>
     )
 };
