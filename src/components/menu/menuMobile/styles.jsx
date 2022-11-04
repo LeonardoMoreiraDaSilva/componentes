@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const MenuMobileStyles = styled.div`
 position: absolute;
 width: 200px;
-height: 1050px;
-margin-top: 0px;
+height: 100vh;
+margin-top: 0;
 margin-left: 0;
 margin-right: 0;
 margin-bottom: 0;
