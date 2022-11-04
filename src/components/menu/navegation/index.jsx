@@ -4,17 +4,17 @@ import { NavConteiner } from "./styles";
 import MenuHamburguer2 from "../menuHamburguer";
 import MenuMobile from "../menuMobile";
 import { BoxNav } from "./styles";
-import { useState } from "react";
+//import { useState } from "react";
 
 
 
-export default function Navegation2(){
-    const [isVisible, setIsVisible] = useState(false);
+export default function Navegation2({isVisible, menuClick}){
+    //const [isVisible, setIsVisible] = useState(false);
 
-    function menuClick (){
-        setIsVisible(isVisible => !isVisible);
-        console.log(isVisible)
-    }
+    //function menuClick (){
+    //  setIsVisible(isVisible => !isVisible);
+    //   console.log(isVisible)
+    //}
    
     return(
         <>
