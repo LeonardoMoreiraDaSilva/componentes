@@ -8,5 +8,9 @@ export const MainStyles = styled.main`
     
     transform: translateX(${props => props.isVisible ? "200px" : "0px"});
     transition: 1s;
+    @media (min-width: 800px){
+        transform: translateX(${props => props.isVisible ? "0px" : "0px"});
+        transition: 1s;
+    }
 `;
 
