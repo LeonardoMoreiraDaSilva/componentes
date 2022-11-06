@@ -3,6 +3,7 @@ import { MainStyles } from "./styles";
 import { useState } from "react";
 
 
+
 export function PageContainner ({children}){
     const [isVisible, setIsVisible] = useState(false);
 
@@ -13,8 +14,10 @@ export function PageContainner ({children}){
 
     return(
         <>
+           
             <Navegation2 isVisible={isVisible} menuClick={menuClick}/>
             <MainStyles isVisible={isVisible}>{children}</MainStyles>
+          
         </>
     )
 };
