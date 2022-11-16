@@ -6,7 +6,7 @@ export default function DefaultButton(
         <DefaultButtonStyles 
             w={w} h={h} bgc={bgc} bgh={bgh} fontcolor={fontcolor} 
             fontcolorh={fontcolorh} fontsize={fontsize} bradius={bradius} 
-            margin={margin} alternarThemer={alternarThemer}>{children}
+            margin={margin} onClick={alternarThemer}>{children}
         </DefaultButtonStyles>
     )
 }
