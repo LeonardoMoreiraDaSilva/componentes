@@ -12,11 +12,14 @@ import { listThemes } from "../../theme";
 export default function Navegation2({isVisible, menuClick}){
     
     function alternarThemer (){
-        console.log(listThemes)
-        alert("ok")
+        console.log("testando");
+        const atualTheme = "Tudo certo";
+
+        
     }
-    return(
+    return( 
         <>
+        
             <NavConteiner>
                 <NavLogo/>
                 <BoxNav>
