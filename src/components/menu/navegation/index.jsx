@@ -4,19 +4,13 @@ import { NavConteiner } from "./styles";
 import MenuHamburguer2 from "../menuHamburguer";
 import MenuMobile from "../menuMobile";
 import { BoxNav } from "./styles";
-import DefaultButton from "../../button/defaultButton";
-import { listThemes } from "../../theme";
+import ButtonAltTheme from "../../theme";
+
 
 
 
 export default function Navegation2({isVisible, menuClick}){
     
-    function alternarThemer (){
-        console.log("testando");
-        const atualTheme = "Tudo certo";
-
-        
-    }
     return( 
         <>
         
@@ -25,7 +19,7 @@ export default function Navegation2({isVisible, menuClick}){
                 <BoxNav>
                     <NavLink  path="/" text="HOME" />
                     <NavLink  path="/componentes" text="COMPONENTES"/>
-                    <DefaultButton alternarThemer={alternarThemer}>Themer</DefaultButton>
+                    <ButtonAltTheme>Theme</ButtonAltTheme>
                 </BoxNav>
                 <MenuHamburguer2 isVisible={isVisible} menuClick={menuClick}/>
             </NavConteiner>
