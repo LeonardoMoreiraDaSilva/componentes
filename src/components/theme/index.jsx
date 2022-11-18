@@ -7,18 +7,15 @@ const listThemes = [
     DefaultTheme
 ]
 
-function changeTheme(){
+function changeTheme(currentTheme){
     const quantityTheme = listThemes.length - 1
-    let currentTheme
-    console.log(currentTheme)
+    
         
-    if(currentTheme === NaN){
-        currentTheme = 0
-        
-    } else if(currentTheme === quantityTheme){
-            currentTheme = 0
-        
-        }else{currentTheme++}
+    if(currentTheme === quantityTheme){
+        currentTheme = 0 
+    }else{
+        currentTheme++
+    }
     
     return(currentTheme)
     
@@ -31,8 +28,9 @@ export default function ButtonAltTheme(){
     )  
 }
 
-const currentTheme = changeTheme()
+let currentTheme = 0
+currentTheme = changeTheme(currentTheme)
 console.log(currentTheme)
 
-const Theme = listThemes[1]
+const Theme = listThemes[currentTheme]
 export {Theme}
