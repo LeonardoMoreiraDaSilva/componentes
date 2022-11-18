@@ -1,24 +1,38 @@
 import { DarkTheme } from "./darkTheme";
 import { DefaultTheme } from "./defaultTheme";
-import DefaultButtonStyles from "../button/defaultButton/styles";
+
 
 const listThemes = [
     DarkTheme,
     DefaultTheme
 ]
 
-export default function ButtonAltTheme(){
-    
-    function testeok(){
-        console.log("Tudo funcionando ainda!")
-        const atualTheme = listThemes[0]
-    }
-    return(
+function changeTheme(){
+    const quantityTheme = listThemes.length - 1
+    let currentTheme
+    console.log(currentTheme)
         
-       <button onClick={testeok}></button>
-    )
+    if(currentTheme === NaN){
+        currentTheme = 0
+        
+    } else if(currentTheme === quantityTheme){
+            currentTheme = 0
+        
+        }else{currentTheme++}
+    
+    return(currentTheme)
+    
 }
 
-console.log(atualTheme)
+export default function ButtonAltTheme(){
+    
+    return(
+        <button onClick={changeTheme}></button>
+    )  
+}
+
+const currentTheme = changeTheme()
+console.log(currentTheme)
+
 const Theme = listThemes[1]
 export {Theme}
