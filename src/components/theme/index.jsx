@@ -2,35 +2,25 @@ import { DarkTheme } from "./darkTheme";
 import { DefaultTheme } from "./defaultTheme";
 
 
-const listThemes = [
-    DarkTheme,
-    DefaultTheme
-]
+const listThemes = [DarkTheme, DefaultTheme]
+//let inicialThema = 0
+let currentTheme = 0
 
-function changeTheme(currentTheme){
-    const quantityTheme = listThemes.length - 1
+function changeTheme(){
     
-        
-    if(currentTheme === quantityTheme){
-        currentTheme = 0 
-    }else{
-        currentTheme++
-    }
-    
+    currentTheme++
+    //console.log(currentTheme)
     return(currentTheme)
-    
 }
-
+console.log(currentTheme = currentTheme)
 export default function ButtonAltTheme(){
-    
     return(
         <button onClick={changeTheme}></button>
     )  
 }
 
-let currentTheme = 0
-currentTheme = changeTheme(currentTheme)
-console.log(currentTheme)
+//inicialThema = changeTheme()
+//console.log(inicialThema)
 
-const Theme = listThemes[currentTheme]
+const Theme = listThemes[1]
 export {Theme}
