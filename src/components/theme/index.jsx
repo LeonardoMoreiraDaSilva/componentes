@@ -1,24 +1,20 @@
 import { DarkTheme } from "./darkTheme";
 import { DefaultTheme } from "./defaultTheme";
-
+import { useState } from "react";
 
 const listThemes = [DarkTheme, DefaultTheme]
-let currentTheme = 0
 
-function changeTheme(){
-   currentTheme++
-   console.log(currentTheme)
-    return(currentTheme)
-}
-
-console.log(currentTheme)
 
 export default function ButtonAltTheme(){
-    return(
-        <button onClick={changeTheme}></button>
-    )  
+     const [cont, setCont] = useState(0);
+     console.log(cont)
+     return(
+        <>
+            <button onClick={() => setCont(cont + 1)}></button>
+        </>
+    )   
 }
+console.log(cont)
 
-console.log(currentTheme)
-const Theme = listThemes[currentTheme]
+const Theme = listThemes[0]
 export {Theme}
